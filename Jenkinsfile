@@ -5,7 +5,7 @@ pipeline {
         
         stage('Building') {
             steps {
-                mvn -Dmaven.test.failure.ignore=true clean package
+                mvn -Dmaven.test.failure.ignore=true clean
             }
         }
         stage('Artifact Archiving') {
